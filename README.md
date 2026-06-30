@@ -1,86 +1,49 @@
-# Precios diarios de los supermercados · Seguimiento ciudadano
+# Precios abiertos · Seguimiento ciudadano
 
-Panel público para hacer seguimiento de la iniciativa que pide **abrir los precios
-diarios de los supermercados como datos públicos**, y de todas las acciones,
-correos y respuestas (o silencios) obtenidos por el camino.
+**Una iniciativa para que los precios diarios de los supermercados sean datos públicos.**
 
-> "La rendición de cuentas democrática empieza por contestar a los correos."
+🌐 **Web del proyecto:** https://raulibanez.github.io/precios-diarios-supermercados/
 
-## Qué es
+> "La rendición de cuentas en una democracia empieza por contestar a los correos."
 
-Una web estática (sin dependencias ni build), **bilingüe ES/EN con selector de idioma**
-y **tema claro de alto contraste**, que muestra:
+## El objetivo
 
-- **Cronología** de cada acción realizada, con su estado (denegado / respondido / sin respuesta).
-- **Tabla de contactos** con destinatario, canal y estado.
-- **Próximos pasos**: pipeline de objetivos a contactar en Europa.
-- Estadísticas automáticas (días desde la petición, nº sin respuesta, etc.).
+Pocas cosas afectan tanto a la vida de las personas como el precio de la cesta de
+la compra. Sin embargo, esos datos siguen siendo terreno casi exclusivo de las
+grandes empresas. Este proyecto defiende una idea sencilla:
+
+**tratar los precios de la alimentación como infraestructura pública** —abiertos,
+diarios y accesibles para cualquiera—, igual que lo son los datos del tiempo o
+del transporte.
+
+Hacerlo posible permitiría comparadores de precios, alertas para familias
+vulnerables, vigilancia de la inflación real, detección de *shrinkflation* y
+descuentos ficticios, y más competencia y transparencia en el mercado.
+
+## La historia (y por qué este seguimiento)
+
+Desde 2023 vengo pidiendo estos datos por los cauces oficiales: una petición
+formal en datos.gob.es (denegada), correos al Ministerio de Agricultura, al
+Observatorio de la Cadena Alimentaria y a varias instancias europeas. En tres
+años, casi todo han sido **silencios**.
+
+Esta web recoge, de forma pública y verificable, **cada paso dado, a quién, cuándo
+y con qué respuesta** (o falta de ella), además de los próximos objetivos. El
+silencio institucional también se registra: hacerlo visible es parte del mensaje.
+
+## Por qué está en GitHub
+
+- **Es público y transparente.** Cualquiera puede ver el historial completo y
+  comprobar qué se ha pedido, a quién y qué se ha respondido.
+- **Se publica solo, gratis.** GitHub aloja la web (GitHub Pages) sin coste, así
+  que la iniciativa tiene una dirección estable que puedo enviar en cada correo.
+- **Es citable.** Convierte una colección de correos sueltos en una prueba
+  ordenada y enlazable.
 
 ## Privacidad
 
-Los PDFs de los correos contienen tu **email personal, teléfono y empresa**, por lo que
-**no se publican**: están excluidos en `.gitignore` y la web ya **no enlaza** a ellos.
-En su lugar, cada acción muestra un resumen en texto. Si algún día quieres usar un PDF
-como prueba, sube una versión censurada (sin datos personales) y enlázala manualmente.
-
-## Estructura
-
-```
-.
-├── index.html          # Estructura de la página
-├── assets/
-│   ├── styles.css      # Estilos (tema claro, alto contraste)
-│   ├── app.js          # Renderizado + lógica de idioma (i18n)
-│   └── data.js         # ← AQUÍ se editan los datos y traducciones
-├── .gitignore          # Excluye los *.pdf de la publicación
-├── *.pdf               # Tus correos (privados, solo en local)
-└── README.md
-```
-
-## Idiomas
-
-El contenido es bilingüe. En `assets/data.js`, cualquier campo de texto puede ser:
-
-- una cadena simple (igual en ambos idiomas), o
-- un objeto `{ es: "...", en: "..." }` para traducir.
-
-Las etiquetas fijas de la interfaz están en el objeto `I18N` del mismo fichero.
-El idioma elegido se recuerda en el navegador.
-
-## Cómo actualizarlo
-
-Todo el contenido vive en [`assets/data.js`](assets/data.js):
-
-- **Añadir una acción**: copia un bloque dentro de `ACCIONES` y rellena
-  `fecha`, `titulo`, `destinatario`, `estado` y `resumen` (en ES y EN).
-- **Cambiar un estado**: edita el campo `estado`
-  (`"denegado"`, `"respondido"`, `"sin_respuesta"`).
-- **Sumar un objetivo**: añade un bloque a `PROXIMOS`. Cuando le escribas,
-  cámbiale el estado y, si quieres dejar constancia, muévelo a `ACCIONES`.
-
-No hay que tocar `app.js` ni `index.html` para el uso normal.
-
-## Cómo verlo en local
-
-Basta con abrir `index.html` en el navegador. Si los enlaces a los PDF no
-abrieran por restricciones del navegador, sirve la carpeta con un servidor simple:
-
-```bash
-python -m http.server 8000
-# luego abre http://localhost:8000
-```
-
-## Cómo publicarlo gratis (GitHub Pages)
-
-1. Sube la carpeta a un repositorio de GitHub.
-2. *Settings → Pages → Source: Deploy from a branch → `main` / `root`*.
-3. En unos minutos tendrás una URL pública que podrás incluir en tus correos
-   para que cualquiera vea el historial completo y el silencio recibido.
-
-## Contexto legal que respalda la iniciativa
-
-- **Open Data Directive** (UE 2019/1024): reutilización de información del sector público.
-- **Data Act** (Reglamento UE 2023/2854), en particular el acceso y uso de datos.
+Los correos originales contienen datos personales (email, teléfono, empresa), así
+que **no se publican**. La web muestra únicamente un resumen de cada acción.
 
 ---
 
