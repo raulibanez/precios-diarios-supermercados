@@ -1,0 +1,7 @@
+# Documentos privados: contienen email personal, teléfono y empresa.
+# Se conservan en local como archivo, pero NO se publican.
+*.pdf
+
+# Sistema
+.DS_Store
+Thumbs.db

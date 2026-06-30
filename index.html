@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precios diarios abiertos · Seguimiento</title>
+  <meta name="description" content="Seguimiento ciudadano de la petición para abrir los precios diarios de los supermercados como datos públicos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <nav class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="brand" id="brand"></span>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="es" class="lang-btn">ES</button>
+        <button type="button" data-lang="en" class="lang-btn">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow" id="eyebrow"></p>
+      <h1 id="hero-title"></h1>
+      <p class="lead" id="hero-lead"></p>
+      <p class="byline" id="hero-byline"></p>
+
+      <div class="stats" id="stats"></div>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="#cronologia" id="cta-timeline"></a>
+        <a class="btn ghost" id="peticion-link" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="propuesta" class="block">
+      <h2 id="propuesta-titulo"></h2>
+      <p id="propuesta-texto"></p>
+      <ul class="benefits" id="benefits"></ul>
+    </section>
+
+    <section id="cronologia" class="block">
+      <h2 id="cronologia-titulo"></h2>
+      <p class="muted" id="cronologia-sub"></p>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="contactos" class="block">
+      <h2 id="contactos-titulo"></h2>
+      <p class="muted" id="contactos-sub"></p>
+      <div class="table-scroll">
+        <table class="contacts" id="contacts">
+          <thead>
+            <tr>
+              <th id="th-fecha"></th>
+              <th id="th-dest"></th>
+              <th id="th-canal"></th>
+              <th id="th-estado"></th>
+            </tr>
+          </thead>
+          <tbody id="contacts-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="proximos" class="block">
+      <h2 id="proximos-titulo"></h2>
+      <p class="muted" id="proximos-sub"></p>
+      <div class="cards" id="next-cards"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p id="footer-quote"></p>
+      <p class="muted" id="footer-meta"></p>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
