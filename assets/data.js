@@ -182,62 +182,29 @@ const ACCIONES = [
     },
     enlace: "",
   },
+  {
+    fecha: "2026-07-01",
+    titulo: {
+      es: "Email a Agustín Reyna (director general de BEUC)",
+      en: "Email to Agustín Reyna (Director General of BEUC)",
+    },
+    canal: "Email",
+    destinatario: {
+      es: "Agustín Reyna — BEUC (Organización Europea de Consumidores)",
+      en: "Agustín Reyna — BEUC (The European Consumer Organisation)",
+    },
+    estado: "esperando",
+    resumen: {
+      es: "Abro un frente en paralelo: escribo al director general de BEUC, en castellano, presentando 'Precios Abiertos' como propuesta de política europea (no como queja individual). Pregunto si ven recorrido y si podrían apoyarlo, difundirlo o impulsarlo. A la espera de respuesta.",
+      en: "Opening a parallel front: writing to BEUC's Director General, in Spanish, presenting 'Open Prices' as an EU policy proposal (not an individual complaint). I ask whether they see potential and could support, amplify or push it. Awaiting reply.",
+    },
+    enlace: "",
+  },
 ];
 
 /* Próximos objetivos a contactar en Europa (pipeline de outreach).
  * El primero es el siguiente paso recomendado. */
 const PROXIMOS = [
-  {
-    nombre: "Pablo Arias Echeverría",
-    cargo: { es: "Eurodiputado (PPE) · miembro de IMCO", en: "MEP (EPP) · IMCO member" },
-    institucion: { es: "Parlamento Europeo — España", en: "European Parliament — Spain" },
-    pais: { es: "España", en: "Spain" },
-    email: "pablo.arias@europarl.europa.eu",
-    estado: "pendiente",
-    notas: {
-      es: "Español en IMCO. Trabaja en protección del consumidor en entornos digitales. Otro frente del arco parlamentario.",
-      en: "Spaniard in IMCO. Works on consumer protection in digital environments. Another side of the political spectrum.",
-    },
-  },
-  {
-    nombre: "Susana Solís Pérez",
-    cargo: { es: "Eurodiputada · suplente en IMCO", en: "MEP · IMCO substitute" },
-    institucion: { es: "Parlamento Europeo — España", en: "European Parliament — Spain" },
-    pais: { es: "España", en: "Spain" },
-    email: "susana.solis@europarl.europa.eu",
-    estado: "pendiente",
-    notas: {
-      es: "Ingeniera, perfil muy técnico y pro-digital. Buena para entender el lado de datos del proyecto.",
-      en: "Engineer with a strongly technical, pro-digital profile. A good fit to grasp the data side of the project.",
-    },
-  },
-  {
-    nombre: {
-      es: "Comisión IMCO (Mercado Interior y Protección del Consumidor)",
-      en: "IMCO Committee (Internal Market & Consumer Protection)",
-    },
-    cargo: { es: "Comisión del Parlamento Europeo", en: "European Parliament committee" },
-    institucion: { es: "Parlamento Europeo", en: "European Parliament" },
-    pais: "UE",
-    email: "imco-secretariat@europarl.europa.eu",
-    estado: "pendiente",
-    notas: {
-      es: "Órgano competente en consumo. Escribir a la secretaría, no solo a un MEP individual.",
-      en: "The competent body on consumer affairs. Write to the secretariat, not just a single MEP.",
-    },
-  },
-  {
-    nombre: "BEUC — The European Consumer Organisation",
-    cargo: { es: "Organización europea de consumidores", en: "European consumer organisation" },
-    institucion: "BEUC",
-    pais: "UE",
-    email: "info@beuc.eu",
-    estado: "pendiente",
-    notas: {
-      es: "Aliado natural. Hacen campaña por transparencia de precios y contra la shrinkflation.",
-      en: "Natural ally. They campaign for price transparency and against shrinkflation.",
-    },
-  },
   {
     nombre: "DG JUST — Consumers",
     cargo: {

@@ -24,8 +24,9 @@ descuentos ficticios, y más competencia y transparencia en el mercado.
 
 Desde 2023 vengo pidiendo estos datos por los cauces oficiales: una petición
 formal en datos.gob.es (denegada), correos al Ministerio de Agricultura, al
-Observatorio de la Cadena Alimentaria y a varias instancias europeas. En tres
-años, casi todo han sido **silencios**.
+Observatorio de la Cadena Alimentaria, a eurodiputados de la comisión competente
+(IMCO) y a organizaciones europeas de consumidores. En tres años, casi todo han
+sido **silencios**.
 
 Esta web recoge, de forma pública y verificable, **cada paso dado, a quién, cuándo
 y con qué respuesta** (o falta de ella), además de los próximos objetivos. El
