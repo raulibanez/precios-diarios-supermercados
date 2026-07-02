@@ -193,10 +193,46 @@ const ACCIONES = [
       es: "Agustín Reyna — BEUC (Organización Europea de Consumidores)",
       en: "Agustín Reyna — BEUC (The European Consumer Organisation)",
     },
+    estado: "respondido",
+    resumen: {
+      es: "Escribo al director general de BEUC, en castellano, presentando 'Precios Abiertos' como propuesta de política europea. BEUC responde al día siguiente, pero con un mensaje de plantilla: no gestionan reclamaciones individuales y me derivan a sus organizaciones miembro en España (CECU y ASUFIN). No entran en el fondo de la propuesta.",
+      en: "Writing to BEUC's Director General, in Spanish, presenting 'Open Prices' as an EU policy proposal. BEUC replies the next day, but with a template message: they do not handle individual complaints and redirect me to their Spanish member organisations (CECU and ASUFIN). They do not engage with the substance.",
+    },
+    enlace: "",
+  },
+  {
+    fecha: "2026-07-02",
+    titulo: {
+      es: "Réplica a BEUC: no es una queja, es política europea",
+      en: "Reply to BEUC: not a complaint, an EU policy matter",
+    },
+    canal: "Email",
+    destinatario: {
+      es: "Natalia Filella — BEUC",
+      en: "Natalia Filella — BEUC",
+    },
     estado: "esperando",
     resumen: {
-      es: "Abro un frente en paralelo: escribo al director general de BEUC, en castellano, presentando 'Precios Abiertos' como propuesta de política europea (no como queja individual). Pregunto si ven recorrido y si podrían apoyarlo, difundirlo o impulsarlo. A la espera de respuesta.",
-      en: "Opening a parallel front: writing to BEUC's Director General, in Spanish, presenting 'Open Prices' as an EU policy proposal (not an individual complaint). I ask whether they see potential and could support, amplify or push it. Awaiting reply.",
+      es: "Contesto reencuadrando: no es una reclamación individual, sino una propuesta que debe liderarse a nivel europeo (los beneficios son mucho mayores que a escala nacional). Pido que trasladen el mensaje a su equipo de políticas de alimentación/datos. A la espera de respuesta.",
+      en: "I reply reframing it: this is not an individual complaint but a proposal that should be led at EU level (the benefits are far greater than at national scale). I ask them to forward it to their food/data policy team. Awaiting reply.",
+    },
+    enlace: "",
+  },
+  {
+    fecha: "2026-07-02",
+    titulo: {
+      es: "Email a CECU (Confederación de Consumidores y Usuarios)",
+      en: "Email to CECU (Spanish Consumers & Users Confederation)",
+    },
+    canal: "Email",
+    destinatario: {
+      es: "David Sánchez Carpio — CECU (director)",
+      en: "David Sánchez Carpio — CECU (director)",
+    },
+    estado: "esperando",
+    resumen: {
+      es: "Sigo la vía que abrió BEUC: escribo a CECU (organización de consumidores y miembro de BEUC). Presento 'Precios Abiertos' y pido apoyo o difusión y, por ser miembros de BEUC, que valoren impulsarlo también a nivel europeo. A la espera de respuesta.",
+      en: "Following the route BEUC opened: I write to CECU (consumer organisation and BEUC member). I present 'Open Prices' and ask for support or amplification and, as BEUC members, to consider pushing it at EU level too. Awaiting reply.",
     },
     enlace: "",
   },
@@ -205,6 +241,18 @@ const ACCIONES = [
 /* Próximos objetivos a contactar en Europa (pipeline de outreach).
  * El primero es el siguiente paso recomendado. */
 const PROXIMOS = [
+  {
+    nombre: "ASUFIN",
+    cargo: { es: "Asociación de usuarios financieros · miembro de BEUC", en: "Financial users association · BEUC member" },
+    institucion: "ASUFIN",
+    pais: { es: "España", en: "Spain" },
+    email: "presidencia@asufin.com",
+    estado: "pendiente",
+    notas: {
+      es: "También sugerida por BEUC. Perfil más financiero (menos encaje con precios de súper), pero Patricia Suárez (presidenta) tiene fuerte presencia mediática.",
+      en: "Also suggested by BEUC. More finance-focused (weaker fit with grocery prices), but its president Patricia Suárez has strong media presence.",
+    },
+  },
   {
     nombre: "DG JUST — Consumers",
     cargo: {
