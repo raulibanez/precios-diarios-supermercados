@@ -236,6 +236,24 @@ const ACCIONES = [
     },
     enlace: "",
   },
+  {
+    fecha: "2026-07-06",
+    titulo: {
+      es: "Mensaje a José Manuel García-Margallo (exministro de Exteriores)",
+      en: "Message to José Manuel García-Margallo (former Foreign Affairs Minister)",
+    },
+    canal: "Facebook",
+    destinatario: {
+      es: "José Manuel García-Margallo — exministro y exeurodiputado (PPE)",
+      en: "José Manuel García-Margallo — former minister and former MEP (EPP)",
+    },
+    estado: "esperando",
+    resumen: {
+      es: "Cambio de enfoque: en vez de pedir apoyo institucional, pido consejo a un veterano que conoce los entresijos de Madrid y Bruselas. Una sola pregunta: ¿a quién dirigiría usted esta iniciativa para que prosperase? Enviado por Facebook, donde publica con frecuencia. A la espera de respuesta.",
+      en: "Change of approach: instead of asking for institutional support, I ask a veteran who knows the inner workings of Madrid and Brussels for advice. One single question: who would you send this initiative to so it stands a chance? Sent via Facebook, where he posts frequently. Awaiting reply.",
+    },
+    enlace: "",
+  },
 ];
 
 /* Próximos objetivos a contactar en Europa (pipeline de outreach).
